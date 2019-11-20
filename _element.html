@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="rating-component">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `rating-component`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class RatingComponent extends Polymer.Element {
+      static get is() { return 'rating-component'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'rating-component'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(RatingComponent.is, RatingComponent);
+  </script>
+</dom-module>
